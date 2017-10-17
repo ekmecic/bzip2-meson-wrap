@@ -1,8 +1,8 @@
 project('bzip2', 'c', version: '1.0.6')
 
 bzip2_src = [
-  'bzlib.h'
-  'bzlib_private.h'
+  'bzlib.h',
+  'bzlib_private.h',
   'blocksort.c',
   'huffman.c',
   'crctable.c',
