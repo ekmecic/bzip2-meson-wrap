@@ -13,8 +13,8 @@ bzip2_src = [
 
 bzip2_incs = include_directories('.')
 
-static_library('bzip2'
-               sources: bzip2_src,
-               include_directories: bzip2_incs)
+bzip2 = static_library('bzip2',
+                       sources: bzip2_src,
+                       include_directories: bzip2_incs)
 
 bzip2_dep = declare_dependency(link_with: bzip2, include_directories: bzip2_incs)
